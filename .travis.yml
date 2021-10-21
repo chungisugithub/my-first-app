@@ -5,14 +5,14 @@ services:
 
 deploy:
   - provider: elasticbeanstalk
-    region: ap-northeast-2
+    region: us-west-2
     app: "my-first-app"
     env: "Myfirstapp-env"
 
     access_key_id: $AWS_ACCESS_KEY
     secret_access_key: $AWS_SECRET_KEY
 
-    bucket_name: "my-first-app-bucket-2021"
+    bucket_name: "my-first-app-bucket-us-west-2"
 
     bucket_path: "docker"
 
